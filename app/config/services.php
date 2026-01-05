@@ -17,6 +17,12 @@ use Medoo\Medoo;
  * @var Engine $app     FlightPHP app instance
  **********************************************/
 
+$app->register('translator', \app\core\Translator::class);
+
+$app->map('_', function (string $key, array $replace = []) {
+    return 'tttteeee';
+});
+
 
 
 /*********************************************

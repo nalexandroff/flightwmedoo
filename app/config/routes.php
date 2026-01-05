@@ -1,7 +1,6 @@
 <?php
 
 use app\controllers\IndexController;
-use app\controllers\TranslateController;
 
 use app\middlewares\SecurityHeadersMiddleware;
 use flight\Engine;
@@ -16,8 +15,6 @@ use flight\net\Router;
 $router->group('', function(Router $router) use ($app) {
 	
 	$router->get('/', [ IndexController::class, 'index' ]);
-
-	$router->get('/translate', [ TranslateController::class, 'index' ]);
 	
 	/*$router->get('/', function() use ($app) {
 		$app->render('welcome', [ 'message' => 'You are gonna do great things!' ]);

@@ -12,11 +12,6 @@ class BaseController
         $this->app = \Flight::app();
     }
 
-    public function test()
-    {
-        echo 'Бейз контролера се зарежда';
-    }
-
     /**
      * Рендериране с layout (хедър + футър)
      */

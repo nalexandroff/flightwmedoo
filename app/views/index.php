@@ -1,5 +1,6 @@
 <h1 class="mb-4"><?php echo $title; ?></h1>
 <h2>Потребители:</h2>
+<?php echo _('hello'); ?>
 <ul class="list-group">
     <?php foreach ($users as $user): ?>
         <li class="list-group-item">
